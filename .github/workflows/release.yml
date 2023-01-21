@@ -97,6 +97,7 @@ jobs:
           path: joined-${{ matrix.target }}
 
   create-release:
+    permissions: write-all
     needs: [build-bin-cross, build-bin-local]
     runs-on: macos-latest
     steps:
