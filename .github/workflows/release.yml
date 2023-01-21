@@ -127,6 +127,7 @@ jobs:
           path: ./upload_url.txt
 
   release-bin:
+    permissions: write-all
     needs: [create-release]
     runs-on: macos-latest
     strategy:
